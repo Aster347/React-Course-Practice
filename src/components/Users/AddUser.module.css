@@ -1,0 +1,15 @@
+.text {
+    text-align: center;
+    padding: 1.5vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    color: #818181;
+    font-weight: 700;
+}
+
+.box {
+    border: none;
+    border-radius: 5px;
+    margin: .5vh;
+    padding: 4px;
+}
