@@ -1,6 +1,8 @@
 import styles from "./AddUser.module.css";
 import stylesGiven from "./AddUserGiven.module.css";
-import Card from '../UI/Card'
+import Card from '../UI/Card';
+import Button from '../UI/Button';
+
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
@@ -8,19 +10,15 @@ const AddUser = (props) => {
   };
 
   return (
-
-      <form className={styles.text} onSubmit={addUserHandler}>
-        <label htmlfor="username">Username </label>
-        <input className={styles.box} id="username" type="text" />
-        <label htmlfor="age"> Age </label>
-        <input className={styles.box} id="age" type="number" />
-        <div>
-          <button className={styles.box} type="submit">
-            Add User
-          </button>
-        </div>
+    <Card className={stylesGiven.input}>
+      <form onSubmit={addUserHandler}>
+        <label htmlFor="username">Username</label>
+        <input id="username" type="text" />
+        <label htmlFor="age">Age (Years)</label>
+        <input id="age" type="number" />
+        <Button type="submit">Add User</Button>
       </form>
-
+    </Card>
   );
 };
 
